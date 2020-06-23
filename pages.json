@@ -1,0 +1,111 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			},
+			"app-plus": {
+				"bounce": "none",
+				"titleNView": {
+					"buttons": [{
+							"text": "十三村",
+							"fontSize": "16",
+							"float": "left",
+							"color": "#fff",
+							"width": "60px",
+							"select": true
+						},
+						{
+							"text": "\ue609",
+							"fontSize": "16",
+							"fontSrc": "static/tabbar-icon/home.png",
+							"float": "right",
+							"color": "#fff"
+						},
+						{
+							"text": "\ue660",
+							"fontSize": "16",
+							"fontSrc": "static/tabbar-icon/home.png",
+							"float": "right",
+							"color": "#fff"
+						}
+					],
+					"searchInput": {
+						"align": "center",
+						"placeholder": "公益相亲会",
+						"borderRadius": "50upx",
+						"backgroundColor": "#008B84",
+						"placeholderColor": "#FFFFFF"
+					}
+				}
+			}
+		}, {
+			"path": "pages/index/recommend",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/index/classification",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/index/chat",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/index/personalCenter",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#d81e06",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar-icon/home.png",
+			"selectedIconPath": "static/tabbar-icon/red-home.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/index/recommend",
+			"iconPath": "static/tabbar-icon/recommend.png",
+			"selectedIconPath": "static/tabbar-icon/red-recommend.png",
+			"text": "推荐"
+		}, {
+			"pagePath": "pages/index/classification",
+			"iconPath": "static/tabbar-icon/classification.png",
+			"selectedIconPath": "static/tabbar-icon/red-classification.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/index/chat",
+			"iconPath": "static/tabbar-icon/chat.png",
+			"selectedIconPath": "static/tabbar-icon/red-chat.png",
+			"text": "聊天"
+		}, {
+			"pagePath": "pages/index/personalCenter",
+			"iconPath": "static/tabbar-icon/perCenter.png",
+			"selectedIconPath": "static/tabbar-icon/red-perCenter.png",
+			"text": "个人中心"
+		}]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
