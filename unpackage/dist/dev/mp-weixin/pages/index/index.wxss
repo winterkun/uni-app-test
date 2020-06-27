@@ -24,6 +24,38 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.right {
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #ababab;
+  border-right: 2rpx solid #ababab;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.flex-coloum {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
 .scroll-container {
   white-space: nowrap;
   height: 80rpx;
@@ -33,24 +65,106 @@
 .scroll-container .scroll-item {
   text-align: center;
   display: inline-block;
-  padding: 0 30rpx;
+  margin: 0 30rpx;
   line-height: 70rpx;
   font-size: 36rpx;
   font-weight: 400;
   color: #1e1e1e;
 }
 .scroll-container .scroll-item.active {
-  display: inline-block;
-  font-weight: bold;
-  color: #1e1e1e;
-  font-size: 42rpx;
-  border-bottom: 2px solid #ff4f52;
+  color: #ff4f52;
+  border-bottom: 10rpx solid #ff4f52;
 }
-.scroll-container .bottom-border {
-  margin: 0 auto;
+.invite {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 10rpx;
+  margin: 0 20rpx;
+  width: calc(100% - 60rpx);
+  height: 50rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.invite .invite-left {
+  height: 100%;
+  line-height: 50rpx;
+}
+.invite .invite-left image {
+  margin-right: 6rpx;
   width: 50rpx;
-  height: 10rpx;
-  background: #ff4f52;
-  border-radius: 5rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.invite .invite-right {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  color: #ababab;
+}
+.invite .invite-right .invite-right-img {
+  margin-right: 20rpx;
+}
+.invite .invite-right .invite-right-img image {
+  vertical-align: middle;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: -6rpx;
+}
+.invite .invite-right text {
+  margin-right: 20rpx;
+}
+.tab-navigation {
+  background-color: red;
+  padding: 20rpx;
+  width: calc(100% - 40rpx);
+  height: 350rpx;
+}
+.tab-navigation .navigation-swiper {
+  width: 100%;
+  height: 100%;
+}
+.tab-navigation .navigation-swiper .navigation-swiper-item {
+  width: 50rpx;
+  height: 100% !important;
+  background-color: white;
+}
+.tab-navigation .navigation-swiper .navigation-swiper-item image {
+  width: 100rpx !important;
+  height: 100rpx !important;
+}
+.tab-navigation .navigation-swiper .navigation-swiper-item .swiper-item-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 50%;
+}
+.tab-navigation .navigation-swiper .navigation-swiper-item .swiper-item-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 50%;
 }
 
